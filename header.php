@@ -21,7 +21,7 @@
                 <p class="col"><img src="images/240px-Sena_Colombia_logo.svg.png" alt="Logo SENA" width="100px" padding-left: 20px></p>
                 <h1 class="col">EGRESADOS CBC</h1>
                 <div class="col">
-                    <button class="btn btn-succes">Registrese</button>
+                    <a href="conexion.php"><button class="btn btn-succes">Registrese</button></a>
                     <button class="btn btn-succes">Inicio</button>
                 </div>
             </div>
