@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    border: 0;
+}
+.container{
+    width: 1200px;
+
+}
+.header{
+    width: 100%;
+    background: rgb(240, 240, 220);
+    text-align: justify;
+    grid-row: 3;
+}
+.gov{
+
+}
+.banner{
+    width: 100%;
+    background: rgb(103, 103, 170);
+
+}
+.nav{
+
+}
+.col-md-2 {
+    padding-right: 5px;
+}
+.btn{ margin: 13px 12px 12px 10px; }
+
+.pie{
+    width: 1200px;
+}
+.min{
+    font-size: small;
+}
+
+ul{
+
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.listMin {
+    margin: 10px 0 10px 40px;
+    padding: 0;
+    list-style: none;
+    
+.direccion{
+    width: 1200px;
+    font-size: 8px;
+    padding-left: 50px;
+    background-color: #ff6b00;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fffcfc;
+
+}
+.redes{
+    width: 1200px;
+}
+.copy{
+    text-align: center;
+    font-size: 12px;
+}
