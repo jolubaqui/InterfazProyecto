@@ -134,9 +134,15 @@ td {
 }
  
 /* Begin font styles */
+<<<<<<< HEAD
 h1 {
     font-family: Arial;
     color: #081808 !important;
+=======
+h1, #footer {
+    font-family: Arial;
+    color: #F1F3F1;
+>>>>>>> a5c707b0e57b94da7e44b14053e110530099819f
 }
  
 h3 {margin: 0; padding: 0;}
@@ -182,17 +188,26 @@ textarea {
     height: 200px;
 }
 .formulario {
+<<<<<<< HEAD
     max-width: 50em;
+=======
+    max-width: 25em;
+>>>>>>> a5c707b0e57b94da7e44b14053e110530099819f
     padding: 1.3em;
     margin: 0 auto;
     font-weight: bold;
     border-radius: 0.5em;
+<<<<<<< HEAD
     
+=======
+    box-shadow: inset 1px 1px 22px 4px rgba(0, 0, 0, 0.85);
+>>>>>>> a5c707b0e57b94da7e44b14053e110530099819f
 }
 
     .clear::after{content:"."; display:block; height:0; clear:both; visibility:hidden; line-height:0;}
       .clear{display:block; clear:both}
     
+<<<<<<< HEAD
 
 /*Panel de Control*/      
 .tittlePanelControl{
@@ -234,3 +249,5 @@ textarea {
     font-size: 14pt;
 
 }
+=======
+>>>>>>> a5c707b0e57b94da7e44b14053e110530099819f
