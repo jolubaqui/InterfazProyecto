@@ -1,18 +1,14 @@
 <?php
+    $host="localhost";
+    $user="root";
+    $pass=""; 
+    $datab="egresados";
 
-$user="root";
-$pass="1";
-$host="localhost";
-$datab="egresados";
+   $mysqli=new mysqli("$host", "$user", "$pass", "$datab");
 
-$connection=mysqli_connect($host, $user, $pass);
-
-$db=mysqli_select_db($connection,$datab);
-
-if  (!$connection) {
-    die('No pudo conectarse: ' . mysql_error());
-}
-echo 'Conectado satisfactoriamente';
-mysqli_close($connection);
+   if(mysqli_connect_errno()){
+       echo 'Conexión fallida: ', mysqli_connect_error();
+       exit();
+   }
 
 ?>

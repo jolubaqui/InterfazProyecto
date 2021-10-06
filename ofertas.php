@@ -3,7 +3,9 @@
     </div>
     <br>
     <br>
-    <h1>Ofertas laborales</h1>
+    <div class="container">
+        <img src="images/constru.jpg">
+    </div>
     <br>
     <br>
     <br>

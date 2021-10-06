@@ -1,54 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egresados SENA</title>
+    
+    <link href="estilos.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   
+</head>
+<body>
+
 <footer class="container">
-        <div class="min">
+        <div class="min" >
             <div class="fullWidth clear rnd8 push10 pad010 bgWhite border01">
-                    <div id="min" class="clear">
-                        <div class="oneNews first">
+                    <div class="row" id="min" class="clear">
+                    <section class="prueba"style="display:grid; grid-template-columns:repeat(5, 1fr)">
+                        <div class="oneNews first" class="col">
                             <img class="logoGov" src="https://repositorioterritorium.s3.amazonaws.com/1256/institucion/cms/footer/footerimages/logoGovCol.png" alt="Gobierno de Colombia" title="Gobierno de Colombia">
                         </div>
-                        <div class="twoNews">
+
+                        <div class="twoNews" class="col">
                             <ul class="listMin clear">
-                            <li><a href="http://es.presidencia.gov.co/" target="_blank"><span class="fa fa-circle fa-lx pinPresidencia" style="margin-right:7px"></span>
-                            Presidencia</a></li>
-                            <li><a href="http://www.vicepresidencia.gov.co/" target="_blank"><span class="fa fa-circle fa-lx pinVicepresidencia" style="margin-right:7px"></span>
-                            Vicepresidencia</a></li>    
-                            <li><a href="http://www.minjusticia.gov.co/" target="_blank"><span class="fa fa-circle fa-lx pinMinjusticia" style="margin-right:7px"></span>
-                            MinJusticia</a></li>    
-                            <li><a href="http://www.mindefensa.gov.co/" target="_blank"><span class="fa fa-circle fa-lx pinMindefensa" style="margin-right:7px"></span>
-                            MinDefensa</a></li> 
-                            <li><a href="http://www.mininterior.gov.co/" target="_blank"><span class="fa fa-circle fa-lx pinMininterior" style="margin-right:7px"></span>
-                            MinInterior</a></li>    
-                            <li><a href="http://www.cancilleria.gov.co/" target="_blank"><span class="fa fa-circle fa-lx pinMinrelaciones" style="margin-right:7px"></span>
-                            MinRelaciones</a></li>  
-                            <li><a href="http://www.minhacienda.gov.co/" target="_blank"><span class="fa fa-circle fa-lx pinMinhacienda" style="margin-right:7px"></span>
-                            MinHacienda</a></li>    
-                            <li><a href="http://www.minminas.gov.co/" target="_blank"><span class="fa fa-circle fa-lx pinMinminas" style="margin-right:7px"></span>
-                            MinMinas</a></li>   
-                            <li><a href="http://www.mincit.gov.co/" target="_blank"><span class="fa fa-circle fa-lx pinMincomercio" style="margin-right:7px"></span>
-                            MinComercio</a></li>    
-                            <li><a href="http://www.mineducacion.gov.co/" target="_blank"><span class="fa fa-circle fa-lx pinMineducacion" style="margin-right:7px"></span>
-                            MinEducación</a></li>
-                            <li><a href="http://www.mincultura.gov.co/" target="_blank"><span class="fa fa-circle fa-lx pinMincultura" style="margin-right:7px"></span>
-                            MinCultura</a></li>
-                            <li><a href="https://www.minagricultura.gov.co/" target="_blank"><span class="fa fa-circle fa-lx pinMinagricultura" style="margin-right:7px"></span>
-                            MinAgricultura</a></li>             
-                            <li><a href="http://www.minambiente.gov.co/" target="_blank"><span class="fa fa-circle fa-lx pinMinambiente" style="margin-right:7px"></span>
-                            MinAmbiente</a></li>                
-                            <li><a href="http://www.mintransporte.gov.co/" target="_blank"><span class="fa fa-circle fa-lx pinMintransporte" style="margin-right:7px"></span>
-                            MinTransporte</a></li>
-                            <li><a href="http://www.minvivienda.gov.co/" target="_blank"><span class="fa fa-circle fa-lx pinMinvivienda" style="margin-right:7px"></span>
-                            MinVivienda</a></li>
-                            <li><a href="http://www.mintrabajo.gov.co/" target="_blank"><span class="fa fa-circle fa-lx pinMintrabajo" style="margin-right:7px"></span>
-                            MinTrabajo</a></li>
-                            <li><a href="http://www.minsalud.gov.co/" target="_blank"><span class="fa fa-circle fa-lx pinMinsalud" style="margin-right:7px"></span>
-                            MinSalud</a></li>
-                            <li><a href="http://www.urnadecristal.gov.co/" target="_blank"><span class="fa fa-circle fa-lx pinVicepresidencia" style="margin-right:7px"></span>
-                            Urna de Cristal</a></li>
-                            <li><a href="http://www.mintic.gov.co/" target="_blank"><span class="fa fa-circle fa-lx pinMinTic" style="margin-right:7px"></span>
-                            MinTic</a></li>             
-                          </ul>
+                            <li><a href="http://es.presidencia.gov.co/" target="_blank"><span class="fa fa-circle fa-lx pinPresidencia" style="margin-right:7px"></span>Presidencia</a></li>
+                            <li><a href="http://www.vicepresidencia.gov.co/" target="_blank"><span class="fa fa-circle fa-lx pinVicepresidencia" style="margin-right:7px"></span>Vicepresidencia</a></li>    
+                            <li><a href="http://www.minjusticia.gov.co/" target="_blank"><span class="fa fa-circle fa-lx pinMinjusticia" style="margin-right:7px"></span>MinJusticia</a></li>    
+                            <li><a href="http://www.mindefensa.gov.co/" target="_blank"><span class="fa fa-circle fa-lx pinMindefensa" style="margin-right:7px"></span>MinDefensa</a></li> 
+                            <li><a href="http://www.mininterior.gov.co/" target="_blank"><span class="fa fa-circle fa-lx pinMininterior" style="margin-right:7px"></span>MinInterior</a></li>
+                            </ul>
                         </div>
-                      </div>  
-                    </div>
+                        <div class="twoNews" class="col">   
+                         <ul class="listMin clear">
+                            <li><a href="http://www.cancilleria.gov.co/" target="_blank"><span class="fa fa-circle fa-lx pinMinrelaciones" style="margin-right:7px"></span>MinRelaciones</a></li>  
+                            <li><a href="http://www.minhacienda.gov.co/" target="_blank"><span class="fa fa-circle fa-lx pinMinhacienda" style="margin-right:7px"></span>MinHacienda</a></li>    
+                            <li><a href="http://www.minminas.gov.co/" target="_blank"><span class="fa fa-circle fa-lx pinMinminas" style="margin-right:7px"></span>MinMinas</a></li>   
+                            <li><a href="http://www.mincit.gov.co/" target="_blank"><span class="fa fa-circle fa-lx pinMincomercio" style="margin-right:7px"></span>MinComercio</a></li>    
+                            <li><a href="http://www.mineducacion.gov.co/" target="_blank"><span class="fa fa-circle fa-lx pinMineducacion" style="margin-right:7px"></span>MinEducación</a></li>
+                            </ul>
+                        </div>
+                        <div class="twoNews" class="col">   
+                         <ul class="listMin clear">  
+                            <li><a href="http://www.mincultura.gov.co/" target="_blank"><span class="fa fa-circle fa-lx pinMincultura" style="margin-right:7px"></span>MinCultura</a></li>
+                            <li><a href="https://www.minagricultura.gov.co/" target="_blank"><span class="fa fa-circle fa-lx pinMinagricultura" style="margin-right:7px"></span>MinAgricultura</a></li>             
+                            <li><a href="http://www.minambiente.gov.co/" target="_blank"><span class="fa fa-circle fa-lx pinMinambiente" style="margin-right:7px"></span>MinAmbiente</a></li>                
+                            <li><a href="http://www.mintransporte.gov.co/" target="_blank"><span class="fa fa-circle fa-lx pinMintransporte" style="margin-right:7px"></span>MinTransporte</a></li>
+                            <li><a href="http://www.minvivienda.gov.co/" target="_blank"><span class="fa fa-circle fa-lx pinMinvivienda" style="margin-right:7px"></span>MinVivienda</a></li>
+                            </ul>
+                        </div>
+                        <div class="twoNews" class="col">   
+                         <ul class="listMin clear">  
+                            <li><a href="http://www.mintrabajo.gov.co/" target="_blank"><span class="fa fa-circle fa-lx pinMintrabajo" style="margin-right:7px"></span>MinTrabajo</a></li>
+                            <li><a href="http://www.minsalud.gov.co/" target="_blank"><span class="fa fa-circle fa-lx pinMinsalud" style="margin-right:7px"></span>MinSalud</a></li>
+                            <li><a href="http://www.urnadecristal.gov.co/" target="_blank"><span class="fa fa-circle fa-lx pinVicepresidencia" style="margin-right:7px"></span>Urna de Cristal</a></li>
+                            <li><a href="http://www.mintic.gov.co/" target="_blank"><span class="fa fa-circle fa-lx pinMinTic" style="margin-right:7px"></span>MinTic</a></li> 
+                        </ul>
+                        </div>
+                        </section>   
+                    </div>  
+            </div>
         </div>
         <div class="redes">
             Redes Sociales
@@ -82,3 +92,5 @@
             Copyright &copy; SENA
         </div>
     </footer>
+    </body>
+    </html>

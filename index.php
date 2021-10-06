@@ -1,11 +1,9 @@
 <?php include('header.php')?>
 
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <div class="container">
+        <img src="images/constru.jpg">
+    </div>
 
     <?php include('footer.php')?>
 </body>

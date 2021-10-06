@@ -1,15 +1,27 @@
 <?php include('header.php')?>
 
     </div>
-    
-    <div class="container"><br>
-    <br>
-    <h1>Foros de la comunidad</h1>
-    <br>
-    <br>
-    <br>
+    <div class="container">
+       <div class="row">
+           <div class="col-sm-4">
+                <a href=""><h3>Sobre Mi</h3></a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit... </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit... </p>
+           </div>
+           <div class="col-sm-4">
+           <a href=""><h3>Ajustes</h3></a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit... </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit... </p>
+           </div>
+           <div class="col-sm-4">
+           <a href=""><h3>Editar perfil</h3></a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit... </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit... </p>
+           </div>
+       </div>
     </div>
-
+    <br>
+    <br>
     <?php include('footer.php')?>
 </body>
 </html>
