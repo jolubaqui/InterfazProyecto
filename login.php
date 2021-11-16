@@ -16,7 +16,7 @@
         <input class="form-control" type="text" placeholder="Correo Electronico" name="email" value="" required/>
         
         </div>
-        
+        <br>
         <div class="input-contenedor">
         <i class="fas fa-key icon"></i>
         <input class="form-control" type="password" placeholder="Contraseña" name="password" value="" required/>
