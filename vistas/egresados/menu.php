@@ -1,36 +1,3 @@
-<?php
-    session_start();
-?>
-
-    </div>
-    <br>
-    <br>
-    <div class="container">
-
-        <div class="header" >
-            <div class="gov" >
-                <a href="#">GOV.CO</a>
-            </div>
-            <div class= "row">
-                <p class="col"><img src="images/240px-Sena_Colombia_logo.svg.png" alt="Logo SENA" width="100px" padding-left: 20px></p>
-                <h1 class="col" style="color: black">EGRESADOS CBC</h1>
-                <div class="col">
-                    <a href="registro_usuario.php"><button class="btn btn-succes">Registrarse</button></a>
-                    <a href="login.php"> <button class="btn btn-succes">Login</button></a>
-                </div>
-            </div>
-            
-        </div>
-        <div class="btn-group" role="group" aria-label="Basic example">
-                <a href="index.php"><button  class="btn btn-primary ">Inicio</button></a>
-                <a href="quienes.php"><button  class="btn btn-primary ">Quienes Somos</button></a>
-                <a href= "indexforo.php"><button  class="btn btn-primary ">Foros</button></a>
-                <a href="cursos.php"><button  class="btn btn-primary ">Cursos</button></a>
-                <a href="ofertas.php"><button  class="btn btn-primary ">Ofertas</button></a>
-                <a href="eventos.php"><button  class="btn btn-primary ">Eventos</button></a>
-                <a href="noticias.php"><button  class="btn btn-primary ">Noticias</button></a>
-            
-        </div>
 
     <!-- Page Wrapper -->
     <div id="wrapper">
@@ -273,30 +240,7 @@
                             
                             <div class="table-responsive">
                                 
-<?php
-    if ($_SERVER['REQUEST_METHOD']==='POST'){
-        $vnumid=$_POST['numid'];
-        $vnombres=$_POST['nombres'];
-        $vapellidos=$_POST['apellidos'];
-        $miconexion= new mysqli('', 'egresados');
-        $resultado=mysqli_query($miconexion,"select * from usuarios where 
-        trim(usu_id) like '%{$vnumid}%' and (trim(nombres) like 
-        '%{$vnombres}%' 
-        and trim(apellidos) like '%{$vapellidos}%')");
-        if($resultado->num_rows>0)
-    { 
-        while ($fila = $resultado->fetch_object()) 
-        {
-            echo $fila->usu_id." ".$fila->tipoDoc." ".$fila->numDoc." ".$fila->nombres." ".$fila->apellidos." ".
-            $fila->telefono." ".$fila->ciudad." ".$fila->email." ".$fila->password." ".$fila->tipoUsuario."<br>";
-        }
-    }
-    else{
-        echo "No existen registros";
-    }
-    $miconexion->close();
-    }
-?>
+
                             </div>
 
                             <tbody>
@@ -331,17 +275,46 @@
                                            
                                     
                                 </tr>
-                                <?php foreach($egresados as $egresado){ ?>
-
-        
-<tr>
-
-    <td> <?php echo $egresado->numDoc ?> </td>
-    <td><?php echo $egresado->nombres ?></td>
-    <td><?php echo $egresado->email ?></td>
-    <td> Editar | Eliminar</td>
-</tr>
-<?php } ?>
+                                <tr>
+                                    <td>Garrett Winters</td>
+                                    <td>Accountant</td>
+                                    <td>Tokyo</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>Ashton Cox</td>
+                                    <td>Junior Technical Author</td>
+                                    <td>San Francisco</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>Cedric Kelly</td>
+                                    <td>Senior Javascript Developer</td>
+                                    <td>Edinburgh</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>Airi Satou</td>
+                                    <td>Accountant</td>
+                                    <td>Tokyo</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>Brielle Williamson</td>
+                                    <td>Integration Specialist</td>
+                                    <td>New York</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>Herrod Chandler</td>
+                                    <td>Sales Assistant</td>
+                                    <td>San Francisco</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>Rhona Davidson</td>
+                                    <td>Integration Specialist</td>
+                                    <td>Tokyo</td>
                                     
                                    
                     
@@ -393,9 +366,3 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
-
-
-
-    
-</body>
-</html>

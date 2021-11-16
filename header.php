@@ -21,23 +21,19 @@
                 <p class="col"><img src="images/240px-Sena_Colombia_logo.svg.png" alt="Logo SENA" width="100px" padding-left: 20px></p>
                 <h1 class="col" style="color: black">EGRESADOS CBC</h1>
                 <div class="col">
-<<<<<<< HEAD
-                    <a href="registro_usuario.php"><button class="btn btn-succes">Registrate</button></a>
-=======
-                    <a href="registro_usuario.php"><button class="btn btn-succes">Registrese</button></a>
->>>>>>> a5c707b0e57b94da7e44b14053e110530099819f
-                    <a href="login.php"> <button class="btn btn-succes">Inicio</button></a>
+                    <a href="?controlador=egresados&accion=crear"><button class="btn btn-succes">Registrate</button></a>
+                    <a href="login.php"> <button class="btn btn-succes">Login</button></a>
                 </div>
             </div>
             
         </div>
         <div class="btn-group" role="group" aria-label="Basic example">
                 <a href="index.php"><button  class="btn btn-primary ">Inicio</button></a>
-                <a href="quienes.php"><button  class="btn btn-primary ">Quienes Somos</button></a>
-                <a href= "indexforo.php"><button  class="btn btn-primary ">Foros</button></a>
-                <a href="cursos.php"><button  class="btn btn-primary ">Cursos</button></a>
-                <a href="ofertas.php"><button  class="btn btn-primary ">Ofertas</button></a>
-                <a href="eventos.php"><button  class="btn btn-primary ">Eventos</button></a>
-                <a href="noticias.php"><button  class="btn btn-primary ">Noticias</button></a>
+                <a href="?controlador=paginas&accion=quienes"><button  class="btn btn-primary ">Quienes Somos</button></a>
+                <a href= "?controlador=paginas&accion=indexforo"><button  class="btn btn-primary ">Foros</button></a>
+                <a href="?controlador=paginas&accion=cursos"><button  class="btn btn-primary ">Cursos</button></a>
+                <a href="?controlador=paginas&accion=ofertas"><button  class="btn btn-primary ">Ofertas</button></a>
+                <a href="?controlador=paginas&accion=eventos"><button  class="btn btn-primary ">Eventos</button></a>
+                <a href="?controlador=paginas&accion=noticias"><button  class="btn btn-primary ">Noticias</button></a>
             
         </div>

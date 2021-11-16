@@ -1,38 +1,41 @@
-*{
+* {
     padding: 0;
     border: 0;
 }
-.container{
+
+.container {
     width: 100%;
-
-
 }
-.header{
+
+.header {
     width: 100%;
     background: rgb(240, 240, 220);
     text-align: justify;
     grid-row: 3;
 }
 
-.banner{
+.banner {
     width: 100%;
     background: rgb(103, 103, 170);
-
 }
+
 .col-md-2 {
     padding-right: 5px;
 }
-.btn{ margin: 13px 12px 12px 10px; }
 
-.pie{
+.btn {
+    margin: 13px 12px 12px 10px;
+}
+
+.pie {
     width: 1200px;
 }
-.min{
+
+.min {
     font-size: small;
 }
 
-ul{
-
+ul {
     display: block;
     list-style-type: disc;
     margin-block-start: 1em;
@@ -41,37 +44,43 @@ ul{
     margin-inline-end: 0px;
     padding-inline-start: 40px;
 }
+
 .listMin {
     margin: 10px 0 10px 40px;
     padding: 0;
     list-style: none;
 }
-.direccion{
+
+.direccion {
     width: 1200px;
     font-size: 8px;
     padding-left: 50px;
     background-color: #ff6b00;
     font-family: Arial, Helvetica, sans-serif;
     color: #fffcfc;
-
 }
-.redes{
+
+.redes {
     width: 1200px;
 }
-.copy{
+
+.copy {
     text-align: center;
     font-size: 12px;
 }
+
 body {
     background-color: #4E4E4E;
-    text-align: center;         /* make sure IE centers the page too */
+    text-align: center;
+    /* make sure IE centers the page too */
 }
- 
+
 #wrapper {
     width: 900px;
-    margin: 0 auto;             /* center the page */
+    margin: 0 auto;
+    /* center the page */
 }
- 
+
 #content {
     background-color: #fff;
     border: 1px solid #000;
@@ -79,75 +88,81 @@ body {
     font-family: Arial;
     padding: 20px 30px;
     text-align: left;
-    width: 100%;                /* fill up the entire div */
+    width: 100%;
+    /* fill up the entire div */
 }
- 
+
 #menu {
     float: left;
     border: 1px solid #000;
-    border-bottom: none;        /* avoid a double border */
-    clear: both;                /* clear:both makes sure the content div doesn't float next to this one but stays under it */
-    width:100%;
-    height:20px;
+    border-bottom: none;
+    /* avoid a double border */
+    clear: both;
+    /* clear:both makes sure the content div doesn't float next to this one but stays under it */
+    width: 100%;
+    height: 20px;
     padding: 0 30px;
     background-color: #FFF;
     text-align: left;
     font-size: 85%;
 }
- 
+
 #menu a:hover {
     background-color: #009FC1;
 }
- 
+
 #userbar {
     background-color: #fff;
     float: right;
     width: 250px;
 }
- 
+
 #footer {
     clear: both;
 }
- 
+
+
 /* begin table styles */
+
 table {
     border-collapse: collapse;
     width: 100%;
 }
- 
+
 table a {
     color: #000;
 }
- 
+
 table a:hover {
-    color:#373737;
+    color: #373737;
     text-decoration: none;
 }
- 
+
 th {
     background-color: #B40E1F;
     color: #F0F0F0;
 }
- 
+
 td {
     padding: 5px;
 }
- 
+
+
 /* Begin font styles */
-<<<<<<< HEAD
+
 h1 {
     font-family: Arial;
     color: #081808 !important;
-=======
-h1, #footer {
-    font-family: Arial;
-    color: #F1F3F1;
->>>>>>> a5c707b0e57b94da7e44b14053e110530099819f
 }
- 
-h3 {margin: 0; padding: 0;}
- 
+
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+
 /* Menu styles */
+
 .item {
     background-color: #00728B;
     border: 1px solid #032472;
@@ -156,71 +171,74 @@ h3 {margin: 0; padding: 0;}
     padding: 3px;
     text-decoration: none;
 }
- 
+
 .leftpart {
     width: 70%;
 }
- 
+
 .rightpart {
     width: 30%;
 }
- 
+
 .small {
     font-size: 75%;
     color: #373737;
 }
+
 #footer {
     font-size: 65%;
     padding: 3px 0 0 0;
 }
- 
+
 .topic-post {
     height: 100px;
     overflow: auto;
 }
- 
+
 .post-content {
     padding: 30px;
 }
- 
+
 textarea {
     width: 500px;
     height: 200px;
 }
+
 .formulario {
-<<<<<<< HEAD
     max-width: 50em;
-=======
-    max-width: 25em;
->>>>>>> a5c707b0e57b94da7e44b14053e110530099819f
     padding: 1.3em;
     margin: 0 auto;
     font-weight: bold;
     border-radius: 0.5em;
-<<<<<<< HEAD
-    
-=======
-    box-shadow: inset 1px 1px 22px 4px rgba(0, 0, 0, 0.85);
->>>>>>> a5c707b0e57b94da7e44b14053e110530099819f
 }
 
-    .clear::after{content:"."; display:block; height:0; clear:both; visibility:hidden; line-height:0;}
-      .clear{display:block; clear:both}
-    
-<<<<<<< HEAD
+.clear::after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+}
 
-/*Panel de Control*/      
-.tittlePanelControl{
+.clear {
+    display: block;
+    clear: both
+}
+
+
+/*Panel de Control*/
+
+.tittlePanelControl {
     width: 100%;
     background-color: #fff;
     padding: 5px 15px;
     margin-bottom: 10px;
     font-size: 18pt;
     color: #0A4661;
-
 }
 
-.dashboard{
+.dashboard {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -229,9 +247,9 @@ textarea {
     justify-content: space-around;
     width: 100%;
     margin: auto;
-
 }
-.dashboard a{
+
+.dashboard a {
     color: #898989;
     width: calc(100% /5);
     padding: 20px;
@@ -239,15 +257,13 @@ textarea {
     font-size: 27pt;
     text-align: center;
 }
-.dashboard p{
+
+.dashboard p {
     color: #3279a7;
     text-decoration: none;
 }
 
-.dashboard a span{
+.dashboard a span {
     font-weight: bold;
     font-size: 14pt;
-
 }
-=======
->>>>>>> a5c707b0e57b94da7e44b14053e110530099819f
