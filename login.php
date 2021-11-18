@@ -3,7 +3,14 @@
 ?>
 
 <body class="container">
-    <form class="formulario" method="post" action="loguear.php">
+    <form class="formulario" method="post" action="loguear1.php">
+
+    <?php
+        if(isset($errorLogin) ){
+            echo $errorLogin;
+
+        }
+    ?>
     <br>
     <center>
     <h1>Login</h1>

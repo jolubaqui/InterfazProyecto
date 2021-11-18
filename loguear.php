@@ -1,17 +1,22 @@
 <?php
 
 include 'conexion.php';
-session_start();
+
 
 $vemail = $_POST['email'];
 $vpassword = $_POST['password'];
 
+session_start();
+$_SESSION['email']=$vemail;
+
+
+
 $user="root";
-$pass="";
+$pass="1";
 $host="localhost";
 $datab="egresados";
 
-$miconexion=new mysqli( "localhost", "root", "", "egresados");
+$miconexion=new mysqli( "localhost", "root", "1", "egresados");
 
 
 $miquery = "select count(*) from usuarios where email='$vemail' and password='$vpassword'";

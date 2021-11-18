@@ -22,4 +22,7 @@ class ControladorPaginas{
     public function Quienes(){
         include_once("vistas/paginas/quienes.php");
     }
+    public function Menu(){
+        include_once("vistas/paginas/menu.php");
+    }
 }

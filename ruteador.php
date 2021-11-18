@@ -1,4 +1,5 @@
 <?php 
+include_once("controladores/controlador_paginas.php");
 
 //echo $controlador;
 //echo $accion;
