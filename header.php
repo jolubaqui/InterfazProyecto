@@ -8,14 +8,7 @@
     <title>Egresados SENA</title>
     <link href="estilos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <style>
-        .bg{
-            background-image: url(images/logoegresados.png);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-    </style>
+    
 </head>
 <body>
     <div class="container" >
@@ -32,7 +25,7 @@
                     <a href="?controlador=egresados&accion=login"><button class="btn btn-succes">Login</button></a>
                 </div>
             </div>
-            
+            <hr>
         </div>
         <div class="btn-group" role="group" aria-label="Basic example">
                 <a href="index.php"><button  class="btn btn-success ">Inicio</button></a>
@@ -44,3 +37,4 @@
                 <a href="?controlador=paginas&accion=noticias"><button  class="btn btn-success ">Noticias</button></a>
             
         </div>
+        <hr>

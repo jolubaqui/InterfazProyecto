@@ -27,7 +27,7 @@
                     <label for="connected" class="form-check-label">Mantenerme conectado</label>
                 </div>
                 <div class="d-grid">
-                    <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                    <button type="submit" class="btn btn-success">Iniciar Sesión</button>
                 </div>
                 <div class="my-3">
                     <span>¿No tienes cuenta? <a href="#">Registrate</a></span><br>

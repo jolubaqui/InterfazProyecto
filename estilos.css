@@ -227,3 +227,21 @@ textarea {
     font-weight: bold;
     font-size: 14pt;
 }
+#sidebar {
+    position: relative;
+    width: 200px;
+    height: 100vh;
+    background: #ff6b00;
+}
+#sidebar ul li {
+    text-align: center;
+    padding: 15px 10px;
+    list-style: none;
+    border-bottom: 1px solid #e3e6f0;
+}
+.bg {
+    background-image: url(images/logoegresados.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -1,36 +1,4 @@
-<?php
-    session_start();
-?>
 
-    </div>
-    <br>
-    <br>
-    <div class="container">
-
-        <div class="header" >
-            <div class="gov" >
-                <a href="#">GOV.CO</a>
-            </div>
-            <div class= "row">
-                <p class="col"><img src="images/240px-Sena_Colombia_logo.svg.png" alt="Logo SENA" width="100px" padding-left: 20px></p>
-                <h1 class="col" style="color: black">EGRESADOS CBC</h1>
-                <div class="col">
-                    <a href="registro_usuario.php"><button class="btn btn-succes">Registrarse</button></a>
-                    <a href="login.php"> <button class="btn btn-succes">Login</button></a>
-                </div>
-            </div>
-            
-        </div>
-        <div class="btn-group" role="group" aria-label="Basic example">
-                <a href="index.php"><button  class="btn btn-primary ">Inicio</button></a>
-                <a href="quienes.php"><button  class="btn btn-primary ">Quienes Somos</button></a>
-                <a href= "indexforo.php"><button  class="btn btn-primary ">Foros</button></a>
-                <a href="cursos.php"><button  class="btn btn-primary ">Cursos</button></a>
-                <a href="ofertas.php"><button  class="btn btn-primary ">Ofertas</button></a>
-                <a href="eventos.php"><button  class="btn btn-primary ">Eventos</button></a>
-                <a href="noticias.php"><button  class="btn btn-primary ">Noticias</button></a>
-            
-        </div>
 
     <!-- Page Wrapper -->
     <div id="wrapper">
@@ -39,7 +7,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="menu.php">
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
@@ -50,8 +18,8 @@
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">
+            <li class="nav-item active">
+                <a class="nav-link" href="menu.php">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -63,25 +31,24 @@
             <div class="sidebar-heading">
                 Interface
             </div>
-            
 
             <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item active">
-                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
-                    aria-controls="collapseTwo">
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-cog"></i>
                     <span>Usuarios</span>
+                    
                 </a>
-                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo"
-                    data-parent="#accordionSidebar">
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        
-                        <a class="collapse-item active" href="buttons.php">Consulta</a>
-                        
+                        <a class="collapse-item" href="buttons.html">Reporte de Usuarios</a>
                         <a class="collapse-item" href="cards.html">modificar</a>
                     </div>
                 </div>
+                
             </li>
+            
 
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
@@ -93,87 +60,139 @@
                 <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Foros:</h6>
+                        <h6 class="collapse-header">Custom Utilities:</h6>
                         <a class="collapse-item" href="utilities-color.html">Colors</a>
                         <a class="collapse-item" href="utilities-border.html">Borders</a>
                         <a class="collapse-item" href="utilities-animation.html">Animations</a>
                         <a class="collapse-item" href="utilities-other.html">Other</a>
+            
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>cursos</span>
+                    
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="buttons.html">consulta</a>
+                        <a class="collapse-item" href="cards.html">modificar</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>ofertas</span>
+                    
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="buttons.html">consulta</a>
+                        <a class="collapse-item" href="cards.html">modificar</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>eventos</span>
+                    
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="buttons.html">consulta</a>
+                        <a class="collapse-item" href="cards.html">modificar</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>noticia</span>
+                    
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="buttons.html">consulta</a>
+                        <a class="collapse-item" href="cards.html">modificar</a>
                     </div>
                 </div>
             </li>
 
-            <!-- Divider -->
-            <hr class="sidebar-divider">
-
-            <!-- Heading -->
-            <div class="sidebar-heading">
-                Addons
-            </div>
-
-             </li>
-
            
-        </ul>
-        <!-- End of Sidebar -->
 
-        <!-- Content Wrapper -->
-        <div id="content-wrapper" class="d-flex flex-column">
-
-            <!-- Main Content -->
-            <div id="content">
-
-                <!-- Topbar -->
-                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-
-                    <!-- Sidebar Toggle (Topbar) -->
-                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-                        <i class="fa fa-bars"></i>
-                    </button>
-
-                    <!-- Topbar Search -->
-                    <form
-                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                        <div class="input-group">
-                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
-                                aria-label="Search" aria-describedby="basic-addon2">
-                            <div class="input-group-append">
-                                <button class="btn btn-primary" type="button">
-                                    <i class="fas fa-search fa-sm"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-
-                    <!-- Topbar Navbar -->
-                    <ul class="navbar-nav ml-auto">
-
-                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
-                        <li class="nav-item dropdown no-arrow d-sm-none">
-                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+                        <!-- Nav Item - Messages -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-search fa-fw"></i>
+                                <i class="fas fa-envelope fa-fw"></i>
+                                <!-- Counter - Messages -->
+                                <span class="badge badge-danger badge-counter">7</span>
                             </a>
                             <!-- Dropdown - Messages -->
-                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
-                                aria-labelledby="searchDropdown">
-                                <form class="form-inline mr-auto w-100 navbar-search">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control bg-light border-0 small"
-                                            placeholder="Search for..." aria-label="Search"
-                                            aria-describedby="basic-addon2">
-                                        <div class="input-group-append">
-                                            <button class="btn btn-primary" type="button">
-                                                <i class="fas fa-search fa-sm"></i>
-                                            </button>
-                                        </div>
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="messagesDropdown">
+                                <h6 class="dropdown-header">
+                                    Message Center
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="img/undraw_profile_1.svg"
+                                            alt="...">
+                                        <div class="status-indicator bg-success"></div>
                                     </div>
-                                </form>
+                                    <div class="font-weight-bold">
+                                        <div class="text-truncate">Hi there! I am wondering if you can help me with a
+                                            problem I've been having.</div>
+                                        <div class="small text-gray-500">Emily Fowler · 58m</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="img/undraw_profile_2.svg"
+                                            alt="...">
+                                        <div class="status-indicator"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">I have the photos that you ordered last month, how
+                                            would you like them sent to you?</div>
+                                        <div class="small text-gray-500">Jae Chun · 1d</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="img/undraw_profile_3.svg"
+                                            alt="...">
+                                        <div class="status-indicator bg-warning"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">Last month's report looks great, I am very happy with
+                                            the progress so far, keep up the good work!</div>
+                                        <div class="small text-gray-500">Morgan Alvarez · 2d</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60"
+                                            alt="...">
+                                        <div class="status-indicator bg-success"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">Am I a good boy? The reason I ask is because someone
+                                            told me that people say this to all dogs, even if they aren't good...</div>
+                                        <div class="small text-gray-500">Chicken the Dog · 2w</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
                             </div>
                         </li>
-
-                        
-
-                       
 
                         <div class="topbar-divider d-none d-sm-block"></div>
 
@@ -213,189 +232,23 @@
                 </nav>
                 <!-- End of Topbar -->
 
-                <!-- Begin Page Content -->
-                <div class="container-fluid">
+               
 
-                    <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Reportes</h1>
+                        
+                        
+                        
 
-                    <div class="row">
+                    
+                                
+                        
+                              
 
-                        <div class="col-lg-6">
+                   
+
 
                             
-                                   
-
-
-                            
+                           
                 <!-- /.container-fluid -->
 
             </div>
-            <!-- End of Main Content -->
-
-          
             
-
-       
-        </div>
-        <!-- End of Content Wrapper -->
-                <!-- DataTales Example -->
-            <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary"></h6>
-                </div>
-                <div class="card-body">
-                    <div class="table-responsive">
-                        <table class="table table-bordered" id="dataTable" width="200%" cellspacing="0">
-                        <form action="buttons.php" method="post">
-                            <thead>
-                                <tr>
-                                    <th><input class="form-control" type="number" name="numid"
-                                        min="9999" max="9999999999999" autofocus value=""
-                                        placeholder="ID" /></th>
-                                        
-                                    <th><input class="form-control" type="text" name="nombres"
-                                        placeholder="Nombre" />
-
-                                    </th>
-                                    <th><input class="form-control" type="text" name="apellidos"
-                                        placeholder="apellidos" />
-                                    </th>
-                                    
-                                </tr>
-                            </thead>
-                        </form>
-
-                            <tfoot>
-                                
-                                </tr>
-                            </tfoot>
-                            
-                            <div class="table-responsive">
-                                
-<?php
-    if ($_SERVER['REQUEST_METHOD']==='POST'){
-        $vnumid=$_POST['numid'];
-        $vnombres=$_POST['nombres'];
-        $vapellidos=$_POST['apellidos'];
-        $miconexion= new mysqli('', 'egresados');
-        $resultado=mysqli_query($miconexion,"select * from usuarios where 
-        trim(usu_id) like '%{$vnumid}%' and (trim(nombres) like 
-        '%{$vnombres}%' 
-        and trim(apellidos) like '%{$vapellidos}%')");
-        if($resultado->num_rows>0)
-    { 
-        while ($fila = $resultado->fetch_object()) 
-        {
-            echo $fila->usu_id." ".$fila->tipoDoc." ".$fila->numDoc." ".$fila->nombres." ".$fila->apellidos." ".
-            $fila->telefono." ".$fila->ciudad." ".$fila->email." ".$fila->password." ".$fila->tipoUsuario."<br>";
-        }
-    }
-    else{
-        echo "No existen registros";
-    }
-    $miconexion->close();
-    }
-?>
-                            </div>
-
-                            <tbody>
-                                <tr>
-                                    <td>Tiger Nixon</td>
-                                    <td>System Architect</td>
-                                    <td>Edinburgh</td>
-                                    <td> <style>
-                                        .boton {
-                                                width: 100%; 
-                                                padding: 10px;
-                                               background-color: red;
-                                                color: white;
-                                              
-                                               
-                                            }
-                                     </style>
-                                           <a href="index.php" class="boton">modificar</a></td>
-                                           <td>
-                                            <style>
-                                                .boton {
-                                                        width: 100%; 
-                                                        padding: 10px;
-                                                       background-color: red;
-                                                        color: white;
-                                                      
-                                                       
-                                                    }
-                                             </style>
-                                                   <a href="index.php" class="boton">eliminar</a></td>  
-                                           </td>
-                                           
-                                    
-                                </tr>
-                                <?php foreach($egresados as $egresado){ ?>
-
-        
-<tr>
-
-    <td> <?php echo $egresado->numDoc ?> </td>
-    <td><?php echo $egresado->nombres ?></td>
-    <td><?php echo $egresado->email ?></td>
-    <td> Editar | Eliminar</td>
-</tr>
-<?php } ?>
-                                    
-                                   
-                    
-                </div>
-            </div>
-            
-            </footer>
-            <!-- End of Footer -->
-
-        </div>
-        <!-- End of Content Wrapper -->
-
-    </div>
-    <!-- End of Page Wrapper -->
-
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
-        <i class="fas fa-angle-up"></i>
-    </a>
-    
-
-    <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
-                </div>
-            </div>
-        </div>
-    </div>
-   
-
-    <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
-
-
-
-    
-</body>
-</html>
