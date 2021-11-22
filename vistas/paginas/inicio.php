@@ -1,4 +1,5 @@
     <br><br><br>
+    </div>
     <div class="container container-inicio" style="display:flex; flex-direction:row;">
         <div class="imagen col">
             <img src="images/Pereira_05102021.jpg" alt="noticia" width="300px">

@@ -26,6 +26,18 @@ class Egresado{
 
     }
 
+    public static function loguear(){
+        $listaUsuarios=[];
+        $conexionBD=BD::crearInstancia();
+        $sql= $conexionBD->query("select * from usuarios where usuMail=?");
+
+        foreach($sql->fetchAll() as $usuario){
+            $listaUsuarios[]= new Egresado($usuario['usuTipoId'],$usuario['usuCedula'],$usuario['usuNombres'],$usuario['usuApellidos'],$usuario['usuTelefono'],$usuario['usuCiudad'],$usuario['usuMail'],$usuario['usuPass'],$usuario['usuTipoUsu']);
+        }
+
+        return $listaUsuarios;
+
+    }
     public static function consultar(){
         $listaUsuarios=[];
         $conexionBD=BD::crearInstancia();
@@ -39,12 +51,12 @@ class Egresado{
 
     }
 
-    public static function crear($tipoDoc,$id,$nombres,$apellidos,$telefono,$ciudad,$email,$password,$tipoUsuario){
+    public static function crear($tipoid,$id,$nombres,$apellidos,$telefono,$ciudad,$email,$password,$tipoUsuario){
 
         $conexionBD=BD::crearInstancia();
 
         $sql= $conexionBD->prepare("INSERT into usuarios(usuTipoId,usuCedula,usuNombres,usuApellidos,usuTelefono,usuCiudad,usuMail,usuPass,usuTipoUsu) values(?,?,?,?,?,?,?,?,?)");
-        $sql->execute(array($tipoDoc,$id,$nombres,$apellidos,$telefono,$ciudad,$email,$password,$tipoUsuario));
+        $sql->execute(array($tipoid,$id,$nombres,$apellidos,$telefono,$ciudad,$email,$password,$tipoUsuario));
     }
 
     public static function borrar($id){
@@ -61,12 +73,12 @@ class Egresado{
         return new Egresado($usuario['usuTipoId'],$usuario['usuCedula'],$usuario['usuNombres'],$usuario['usuApellidos'],$usuario['usuTelefono'],$usuario['usuCiudad'],$usuario['usuMail'],$usuario['usuPass'],$usuario['usuTipoUsu']);
     }
 
-    public static function editar($tipoDoc,$id,$nombres,$apellidos,$telefono,$ciudad,$email,$password,$tipoUsuario){
+    public static function editar($tipoid,$id,$nombres,$apellidos,$telefono,$ciudad,$email,$password,$tipoUsuario){
 
         $conexionBD=BD::crearInstancia();
 
         $sql= $conexionBD->prepare("UPDATE usuarios SET usuTipoId=?, usuNombres=?,usuApellidos=?,usuTelefono=?,usuCiudad=?,usuMail=?,usuPass=?,usuTipoUsu=? WHERE usuCedula=?");
-        $sql->execute(array($tipoDoc,$nombres,$apellidos,$telefono,$ciudad,$email,$password,$tipoUsuario,$id));
+        $sql->execute(array($tipoid,$nombres,$apellidos,$telefono,$ciudad,$email,$password,$tipoUsuario,$id));
     }
 
 }

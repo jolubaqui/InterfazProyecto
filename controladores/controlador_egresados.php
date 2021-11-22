@@ -11,6 +11,7 @@ class ControladorEgresados{
         include_once("vistas/egresados/inicio.php");
         
     }
+
     public function crear(){
 
         if($_POST){
@@ -77,6 +78,11 @@ header("location:./?controlador=egresados&accion=inicio");
     public function menu(){
         $egresados=Egresado::consultar();
         include_once("vistas/paginas/menu.php");
+    }
+
+    public function login(){
+        $egresados=Egresado::consultar();
+        include_once("vistas/egresados/login.php");
     }
 
     public function borrar(){

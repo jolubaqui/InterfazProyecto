@@ -4,10 +4,12 @@
 <table class="table">
     <thead>
         <tr>
-            <th>ID</th>
-            <th>Nombre</th>
-            <th>Correo</th>
-            <th>Accion</th>
+            <th style="color: black">ID</th>
+            <th style="color: black">Nombre</th>
+            <th style="color: black">Apellidos</th>
+            <th style="color: black">Teléfono</th>
+            <th style="color: black">Correo Electrónico</th>
+            <th style="color: black">Tipo de Usuario</th>
         </tr>
     </thead>
     <tbody>
@@ -28,9 +30,10 @@
                 <a href="?controlador=egresados&accion=borrar&id=<?php echo $egresado->numDoc?>" class="btn btn-danger">Borrar</a>
                 
             </div>    
-           </td>
+            </td>
         </tr>
         <?php } ?>
     </tbody>
 </table>
+<br><br>
 
