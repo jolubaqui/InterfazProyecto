@@ -25,4 +25,7 @@ class ControladorPaginas{
     public function Menu(){
         include_once("vistas/paginas/menu.php");
     }
+    public function foros(){
+        include_once("vistas/paginas/foros.php");
+    }
 }

@@ -26,7 +26,7 @@ $array = mysqli_num_rows($consulta);
 
 if($array){
 
-    header("location: menu.php");
+    header("location: ?controlador=egresados&accion=menu");
 }else{
     
     echo "DATOS INCORRECTOS";

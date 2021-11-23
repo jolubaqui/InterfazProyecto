@@ -30,9 +30,9 @@
         <div class="btn-group" role="group" aria-label="Basic example">
                 <a href="index.php"><button  class="btn btn-success ">Inicio</button></a>
                 <a href="?controlador=paginas&accion=quienes"><button  class="btn btn-success ">Quienes Somos</button></a>
-                <a href= "?controlador=paginas&accion=indexforo"><button  class="btn btn-success ">Foros</button></a>
+                <a href= "?controlador=paginas&accion=foros"><button  class="btn btn-success ">Foros</button></a>
                 <a href="?controlador=paginas&accion=cursos"><button  class="btn btn-success ">Cursos</button></a>
-                <a href="?controlador=paginas&accion=ofertas"><button  class="btn btn-success ">Ofertas</button></a>
+                <a href="?controlador=paginas&accion=ofertas"><button  class="btn btn-success ">Empleabilidad</button></a>
                 <a href="?controlador=paginas&accion=eventos"><button  class="btn btn-success ">Eventos</button></a>
                 <a href="?controlador=paginas&accion=noticias"><button  class="btn btn-success ">Noticias</button></a>
             
