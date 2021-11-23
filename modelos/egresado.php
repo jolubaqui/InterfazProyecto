@@ -51,6 +51,18 @@ class Egresado{
 
     }
 
+    public static function login(){
+        $listaUsuarios=[];
+        $conexionBD=BD::crearInstancia();
+        $sql= $conexionBD->query("select usuMail, usuPass from usuarios where usuMail=? AND usuPass=?");
+
+        foreach($sql->fetchAll() as $usuario){
+            $listaUsuarios[]= new Egresado($usuario['usuTipoId'],$usuario['usuCedula'],$usuario['usuNombres'],$usuario['usuApellidos'],$usuario['usuTelefono'],$usuario['usuCiudad'],$usuario['usuMail'],$usuario['usuPass'],$usuario['usuTipoUsu']);
+        }
+
+        return $listaUsuarios;
+
+    }
     public static function crear($tipoid,$id,$nombres,$apellidos,$telefono,$ciudad,$email,$password,$tipoUsuario){
 
         $conexionBD=BD::crearInstancia();

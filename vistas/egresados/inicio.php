@@ -1,5 +1,5 @@
 
-<a name="" id="" class="btn btn-success" href="?controlador=egresados&accion=crear" role="button">Agregar Usuario</a>
+<a class="btn btn-success" href="?controlador=egresados&accion=crear" role="button">Agregar Usuario</a>
 
 <table class="table">
     <thead>
@@ -13,7 +13,9 @@
         </tr>
     </thead>
     <tbody>
-        <?php foreach($egresados as $egresado){ ?>
+        <?php 
+            foreach($egresados as $egresado){ 
+        ?>
 
         
         <tr>
