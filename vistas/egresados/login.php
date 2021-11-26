@@ -13,7 +13,7 @@
             </div>
             <h2 class="fw-bold text-center pt-5 mb-5">Bienvenidos!</h2>
         <!--Login-->
-            <form action="./loguear.php" method="post">
+            <form action="?controlador=egresados&accion=menu" method="post">
                 <div class="mb-4">
                     <label for="email" class="form-label">Correo electrónico</label>
                     <input type="mail" class="form-control" name="email"> 

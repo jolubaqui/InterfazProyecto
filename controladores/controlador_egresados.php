@@ -77,12 +77,17 @@ header("location:./?controlador=egresados&accion=inicio");
 
     public function menu(){
         $egresados=Egresado::consultar();
-        include_once("vistas/paginas/menu.php");
+        include_once("vistas/egresados/menu.php");
     }
 
     public function login(){
         $egresados=Egresado::consultar();
         include_once("vistas/egresados/login.php");
+    }
+    
+    public function loguear(){
+        $egresados=Egresado::consultar();
+        include_once("vistas/egresados/loguear.php");
     }
 
     public function borrar(){
