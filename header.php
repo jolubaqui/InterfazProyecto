@@ -17,6 +17,8 @@
             <div class="gov" >
                 <a href="#">GOV.CO</a>
             </div>
+
+            <!--Encabezado con logo y enlace al login--> 
             <div class= "row">
                 <p class="col"><img src="images/240px-Sena_Colombia_logo.svg.png" alt="Logo SENA" width="100px" padding-left: 20px></p>
                 <h1 class="col" style="color: black">EGRESADOS CBC</h1>
@@ -27,6 +29,8 @@
             </div>
             <hr>
         </div>
+
+        <!--Botones de navegacion-->
         <div class="btn-group" role="group" aria-label="Basic example">
                 <a href="index.php"><button  class="btn btn-success ">Inicio</button></a>
                 <a href="?controlador=paginas&accion=quienes"><button  class="btn btn-success ">Quienes Somos</button></a>

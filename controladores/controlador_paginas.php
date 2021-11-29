@@ -28,4 +28,7 @@ class ControladorPaginas{
     public function foros(){
         include_once("vistas/paginas/foros.php");
     }
+    public function restaurar(){
+        include_once("vistas/paginas/restaurar_password.php");
+    }
 }

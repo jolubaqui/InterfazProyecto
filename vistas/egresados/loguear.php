@@ -3,6 +3,7 @@
 include 'conexion.php';
 
 
+
 $vemail = $_POST['email'];
 $vpassword = $_POST['password'];
 
@@ -23,22 +24,25 @@ $miconexion=new mysqli( "localhost", "root", "1", "egresados");
 
 //if($miconexion){    echo "conectado";}
 
-$miquery = "SELECT usuMail,usuPass FROM `usuarios` WHERE usuMail='joseluis@gmail.com' AND usuPass='12345'";
+$miquery = "SELECT * FROM `usuarios` WHERE usuMail='$vemail' AND usuPass='$vpassword'";
 $consulta = mysqli_query($miconexion, $miquery)
 or die(mysqli_connect_error());
-$array = mysqli_num_rows($consulta);
-
-if($miquery){    echo "conectado";}
+$array = mysqli_fetch_array($consulta);
 
 
-if($array){
 
-    header("location: ?controlador=egresados&accion=menu");
+
+if($array['usuTipoUsu']=='Administrador'){
+
+    header("location: ?controlador=egresados&accion=inicio");
+}else
+if($array['usuTipoUsu']=='Egresado'){
+    header("location: ?controlador=egresados&accion=encuesta");
 }else{
     
-    echo "DATOS INCORRECTOS";
+    //echo "DATOS INCORRECTOS";
+    header("location: ?controlador=egresados&accion=login");
 }
-
 
 
 ?>

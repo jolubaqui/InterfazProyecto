@@ -57,6 +57,16 @@
             </div>
         </div>
     </div>
+    <div class="col-4">
+        <div class="card">
+            <img src="images/cermonia.jpg" class="card-img-top" alt="Ceremonia">
+            <div class="card-body">
+                <h5 class="card-title">Ceremonia de certificación de Competencias Laborales</h5>
+                <p class="card-text">Facebook @SENAComunica</p>
+                <p class="card-text">10:00 a.m.</p>
+            </div>
+        </div>
+    </div>
 </div>
 </div>
 

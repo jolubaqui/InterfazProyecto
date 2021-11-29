@@ -1,14 +1,12 @@
-<?php include('header.php')
 
-?>
 
 <body>
     <br>
-    <center>
+    <div id="encuesta">
     <form class="formulario">
     
             <h2>Encuesta</h2>
-            <div class="row g-3">>
+            <div class="row g-3">
                 <div class="col">
             
                 
@@ -126,8 +124,6 @@
                 </div>
             </div>
     </form>
-   
+    </div>
     
-    <?php include('footer.php')
 
-?>

@@ -13,7 +13,7 @@
             </div>
             <h2 class="fw-bold text-center pt-5 mb-5">Bienvenidos!</h2>
         <!--Login-->
-            <form action="?controlador=egresados&accion=menu" method="post">
+            <form action="?controlador=egresados&accion=loguear" method="post">
                 <div class="mb-4">
                     <label for="email" class="form-label">Correo electrónico</label>
                     <input type="mail" class="form-control" name="email"> 
@@ -30,8 +30,8 @@
                     <button type="submit" class="btn btn-success">Iniciar Sesión</button>
                 </div>
                 <div class="my-3">
-                    <span>¿No tienes cuenta? <a href="#">Registrate</a></span><br>
-                    <span><a href="#">Recuperar password</a></span>
+                    <span>¿No tienes cuenta? <a href="?controlador=egresados&accion=crear">Registrate</a></span><br>
+                    <span><a href="?controlador=paginas&accion=restaurar">Recuperar password</a></span>
                 </div>
             </form>
 

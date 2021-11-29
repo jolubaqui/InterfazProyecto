@@ -79,6 +79,10 @@ header("location:./?controlador=egresados&accion=inicio");
         $egresados=Egresado::consultar();
         include_once("vistas/egresados/menu.php");
     }
+    public function encuesta(){
+        $egresados=Egresado::consultar();
+        include_once("vistas/egresados/encuesta.php");
+    }
 
     public function login(){
         $egresados=Egresado::consultar();
