@@ -16,11 +16,11 @@ $_SESSION['email']=$vemail;
 
 
 $user="root";
-$pass="";
+$pass="1";
 $host="localhost";
 $datab="egresados";
 
-$miconexion=new mysqli( "localhost", "root", "", "egresados");
+$miconexion=new mysqli( "localhost", "root", "1", "egresados");
 
 //if($miconexion){    echo "conectado";}
 

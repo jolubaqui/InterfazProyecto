@@ -14,7 +14,23 @@ $has_session = session_status() == PHP_SESSION_ACTIVE;
 ?>
 
 <div class="row" >
-<div id="sidebar" style="text-align:center" class="col-4">
+<div id="sidemenu" style="text-align:center" class="col-4 menu-colapsed">
+    <div id="header1">
+    <div id="title"><span>Panel control</span></div>
+    <div id="menu-btn">
+        <div class="btn-hamburger"></div>
+        <div class="btn-hamburger"></div>
+        <div class="btn-hamburger"></div>
+    </div>
+    <div id="menu-items">
+        <div class="item">
+            <a href="">
+                <div class="icon"></div>
+                <div class="title"></div>
+            </a>
+        </div>
+    </div>
+    </div>
 
     
     <h2 class="text-end">Egresados</h2>
