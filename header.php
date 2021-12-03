@@ -8,15 +8,19 @@
     <title>Egresados SENA</title>
     <link href="estilos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
+  
+
+
+
     <div class="container" >
 
         <div class="header" >
-            <div class="gov" >
-                <a href="#">GOV.CO</a>
-            </div>
+            
 
             <!--Encabezado con logo y enlace al login--> 
             <div class= "row">
@@ -24,7 +28,14 @@
                 <h1 class="col" style="color: black">EGRESADOS CBC</h1>
                 <div class="col">
                     <a href="?controlador=egresados&accion=crear"><button class="btn btn-succes">Registrate</button></a>
-                    <a href="?controlador=egresados&accion=login"><button class="btn btn-succes">Login</button></a>
+                    <a href="?controlador=egresados&accion=login"><button class="btn btn-succes">Iniciar Sesión</button></a>
+                    <?php 
+                        if (isset($_COOKIE["PHPSESSID"])) {
+                            ?> <a href="?controlador=egresados&accion=salir"><button class="btn btn-succes">Cerrar Sesión</button></a>
+                       <?php
+                       }
+                       
+                       ?>                
                 </div>
             </div>
             <hr>

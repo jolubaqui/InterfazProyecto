@@ -13,17 +13,17 @@
                             <div class="col-lg-6">
                                 <div class="p-5">
                                     <div class="text-center">
-                                        <h1 class="h4 text-gray-900 mb-2">¿Olvidaste tu Password?</h1>
+                                        <h1 class="h4 text-gray-900 mb-2">¿Olvidaste tu Contraseña?</h1>
                                         <p class="mb-4">Lo entendemos, esas cosas pasan. ¡Simplemente ingrese su dirección de correo electrónico a continuación y le enviaremos un enlace para restablecer su contraseña!</p>
                                     </div>
                                     <form class="user">
                                         <div class="form-group">
                                             <input type="email" class="form-control form-control-user"
                                                 id="exampleInputEmail" aria-describedby="emailHelp"
-                                                placeholder="Ingresa tu email...">
+                                                placeholder="Ingresa tu correo...">
                                         </div>
                                         <a href="login.html" class="btn btn-primary btn-user btn-block">
-                                            Restaurar Password
+                                            Restaurar Contraseña
                                         </a>
                                     </form>
                                     <hr>

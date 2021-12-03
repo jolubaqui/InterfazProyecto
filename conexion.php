@@ -1,7 +1,7 @@
 <?php
     $host="localhost";
     $user="root";
-    $pass="1"; 
+    $pass=""; 
     $datab="egresados";
 
     $mysqli=new mysqli("$host", "$user", "$pass", "$datab");

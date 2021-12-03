@@ -1,6 +1,6 @@
 <body>
     <br>
-    <center>
+    
     <form class="formulario" action="" method="post">
     
             <h2>Modificación de Usuarios</h2>
@@ -56,7 +56,7 @@
             </div>
         
     </form>
-    </center>
+    
     <br>
     
         

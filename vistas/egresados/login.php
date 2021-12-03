@@ -19,7 +19,7 @@
                     <input type="mail" class="form-control" name="email"> 
                 </div>
                 <div class="mb-4">
-                    <label for="password" class="form-label">Password</label>
+                    <label for="password" class="form-label">Contraseña</label>
                     <input type="password" class="form-control" name="password"> 
                 </div>
                 <div class="mb-4 form-check">

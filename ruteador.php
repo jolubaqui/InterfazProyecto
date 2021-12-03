@@ -1,5 +1,7 @@
 <?php 
 include_once("controladores/controlador_paginas.php");
+include_once("controladores/controlador_egresados.php");
+include_once("controladores/controlador_plantilla.php");
 
 //echo $controlador;
 //echo $accion;

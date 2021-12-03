@@ -1,6 +1,6 @@
 <body>
     <br>
-    <center>
+    
     <form class="formulario" action="" method="post">
     
             <h2>Registro de Usuarios</h2>
@@ -11,35 +11,37 @@
                     <i class="fas fa-user icon"></i>
                     <input name="tipoDoc" class="form-control" type="text" placeholder="Tipo Documento" required>
                 </div>
+                <br>
                 <div class="from-group">
                     <i class="fas fa-user icon"></i>
                     <input name="numDoc" class="form-control" type="id" placeholder="Número Documento" required>
                 </div>
+                <br>
                 <div class="from-group">
                     <i class="fas fa-user icon"></i>
                     <input name="nombres" class="form-control" type="text" placeholder="Nombres" required>
-                </div>
+                </div><br>
                 <div class="from-group">
                     <i class="fas fa-user icon"></i>
                     <input name="apellidos" class="form-control" type="text" placeholder="Apellidos" required>
-                </div>
+                </div><br>
                 <div class="from-group">
                     <i class="fas fa-user icon"></i>
                     <input name="telefono" class="form-control" type="text" placeholder="Teléfono" required>
-                </div>
+                </div><br>
                 <div class="from-group">
                     <i class="fas fa-user icon"></i>
                     <input name="ciudad" class="form-control" type="text" placeholder="Ciudad Residencia" required>
-                </div>
+                </div><br>
                 <div class="from-group">
                     <i class="fas fa-envelope icon"></i>
                     <input name="email" class="form-control" type="text" placeholder="Correo Electronico" required>
                 
-                </div>
+                </div><br>
                 <div class="from-group">
                     <i class="fas fa-user icon"></i>
                     <input name="password" class="form-control" type="password" placeholder="Contraseña" required>
-                </div>
+                </div><br>
                 
                 <div class="from-group">
                     <i class="fas fa-user icon"></i>
@@ -47,7 +49,7 @@
                         <option value="Egresado">Egresado</option>
                         <option value="Administrador">Administrador</option>
                     </select>
-                </div>
+                </div><br>
 
             
                 <input type="submit" value="Registrate" class="btn btn-outline-primary">
@@ -57,7 +59,7 @@
             </div>
         
     </form>
-    </center>
+    
     <br>
     
         

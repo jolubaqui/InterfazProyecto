@@ -7,13 +7,15 @@
     width: 100%;
 }
 
-
-}
 .header {
     width: 100%;
-    background: rgb(240, 118, 4);
-    text-align: justify;
+    
+    text-align: center;
+    padding: 20px;
     grid-row: 3;
+}
+.col .cologo{
+    align-content: stretchs;
 }
 .banner {
     width: 100%;
@@ -241,7 +243,7 @@ textarea {
     color: #fff;
 }
 .bg {
-    background-image: url(images/logoegresados.png);
+    background-image: url(images/bgegresados.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

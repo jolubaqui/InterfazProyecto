@@ -34,7 +34,7 @@ class ControladorEgresados{
 </script>
 
 <?php
-header("location:./?controlador=egresados&accion=inicio");
+header("location:./?controlador=egresados&accion=login");
 
         }
         include_once("vistas/egresados/crear.php");
@@ -84,11 +84,21 @@ header("location:./?controlador=egresados&accion=inicio");
         include_once("vistas/egresados/encuesta.php");
     }
 
+    public function encuesta2(){
+        $egresados=Egresado::consultar();
+        include_once("vistas/egresados/encuesta2.php");
+    }
+
     public function login(){
         $egresados=Egresado::consultar();
         include_once("vistas/egresados/login.php");
     }
     
+    public function salir(){
+        $egresados=Egresado::consultar();
+        include_once("vistas/egresados/cerrarSesion.php");
+    }
+
     public function loguear(){
         $egresados=Egresado::consultar();
         include_once("vistas/egresados/loguear.php");

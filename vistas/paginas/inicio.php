@@ -1,4 +1,11 @@
     <br><br><br>
+    <script>
+    $("document").ready( function () {
+        swal("¿Eres Egresado?", "Registrate como  Usuario y te enviaremos notificaciones para que subas de nivel!");
+        }); 
+    </script>
+
+    
     </div>
     <div class="container container-inicio" style="display:flex; flex-direction:row;">
         <div class="imagen col">

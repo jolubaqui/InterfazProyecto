@@ -79,9 +79,11 @@
 
 				</div>
         </div>
-        <div class="copy">
-            Copyright &copy; SENA
-        </div>
+        <strong>Copyright &copy; 2021 <a href="https://adminlte.io">Ficha 2068060</a>.</strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+      <b>Version</b> 3.1.0
+    </div>
     </footer>
     </body>
     </html>

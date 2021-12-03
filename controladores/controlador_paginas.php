@@ -32,3 +32,4 @@ class ControladorPaginas{
         include_once("vistas/paginas/restaurar_password.php");
     }
 }
+

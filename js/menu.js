@@ -1,17 +1,51 @@
 'use strict';
 
-var usuario = document.getElementById('usuarios');
-var encuesta = document.querySelector('#encuesta');
-var inicio = document.querySelector('#inicio');
+//var evento = document.getElementById('usuarios');
 
-//usuario.addEventListener(type => 'click', function() {
-//  console.log('Has pulsado el boton');
+
+//usuarios.addEventListener("click", function(){
+  //  document.getElementById('usuarios');
 //})
 
-/*function Pulsar() {
-    include_once: '?controlador=egresados&accion=menu';
-}*/
+function dinicio (){
 
-addEventListener('click', () => {
-    console.log('Click');
-})
+    $.ajax({
+        type : "POST",
+        url : "https://docs.google.com/forms/d/1Cfsmf5fE27BuuJF2WTOwIaS8fmWcdr60gsZFvawXIJk/edit",
+        url : "",
+        data : "",
+        success : function(cont) {
+            $("#contenidoPanel2").html(cont);
+           
+        }
+      });
+    
+}
+
+function duser (){
+    $.ajax({
+        type : "POST",
+        url : "?controlador=egresados&accion=menu",
+        data : "",
+        success : function(cont) {
+            $("#contenidoPanel").html(cont);
+           
+        }
+      });
+    
+    
+}
+
+
+function dencuesta (){
+    $.ajax({
+        type : "POST",
+        url : "?controlador=egresados&accion=encuesta2",
+        data : "",
+        success : function(cont) {
+            $("#contenidoPanel").html(cont);
+           
+        }
+      });
+    
+}
